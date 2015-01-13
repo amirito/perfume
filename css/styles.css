@@ -272,7 +272,6 @@
   color: black;
   padding: 10px 15px;
   margin-right: 0;
-  font-family: "Chaparral-Pro-Regular";
   font-size: 13px;
 }
 .rtl .htabs ul li a, .rtl .tab-nav ul li a {
@@ -361,7 +360,6 @@ table.radio tr.highlight:hover td {
 .page-title h1,
 .category-title h1 {
   font-size: 24px;
-  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   line-height: 36px;
@@ -546,7 +544,6 @@ table.radio tr.highlight:hover td {
 }
 .toolbar-bottom .pager {
   display: block;
-  font-family: "Roboto", sans-serif;
 }
 .toolbar-bottom .pager strong {
   display: inline-block;
@@ -572,7 +569,6 @@ table.radio tr.highlight:hover td {
   margin-top: -15px;
 }
 .breadcrumb a, .breadcrumb strong {
-  font-family: "Roboto", sans-serif;
   display: inline-block;
   text-transform: none!important;
 }
@@ -1416,7 +1412,6 @@ table.radio tr.highlight:hover td {
   margin: 0 2px 0 0;
   border-top: 10px solid #171717;
   padding: 10px 0 0;
-  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   text-align: center;
 }
@@ -2420,7 +2415,6 @@ table.radio tr.highlight:hover td {
 /********** < Dashboard */
 .dashboard h2 {
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -2441,7 +2435,6 @@ table.radio tr.highlight:hover td {
   float: left;
   margin: 0;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
@@ -2559,7 +2552,6 @@ p.required, .product-options dt label.required em, .form-list label.required em 
 .account-create .content h2 {
   font-size: 14px;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   margin-bottom: 20px;
   border-bottom: 1px solid #ebebeb;
@@ -3154,7 +3146,6 @@ input, select, textarea {
   transition: all 0.4s ease 0s;
   color: white;
   font-size: 12px;
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   margin: 0;
   border: 0;
@@ -3392,7 +3383,6 @@ table tbody td .option-value {
   /* block styles */
 }
 .block .block-title {
-  font-family: "Chaparral-Pro-Regular";
   font-size: 16px;
   color: #454545;
   padding: 15px;
@@ -3597,7 +3587,6 @@ table tbody td .option-value {
   color: white;
   position: relative;
   text-transform: uppercase;
-  font-family: "Chaparral-Pro-Regular";
   font-size: 16px;
 }
 .block-inline .input-group {
@@ -3935,7 +3924,6 @@ body.layout-boxed-lg #page {
   padding-right: inherit;
 }
 .promotion a {
-  font-family: "Roboto", sans-serif;
   font-size: 13px;
   color: #333333;
   text-transform: uppercase;
@@ -4188,7 +4176,6 @@ body.layout-boxed-lg #page {
 .custom-static h3 {
   line-height: 20px;
   padding-bottom: 10px;
-  font-family: "Chaparral-Pro-Regular";
   font-weight: 300;
 }
 .custom-static .fa {
@@ -4273,7 +4260,6 @@ body.layout-boxed-lg #page {
   line-height: 20px;
   font-size: 15px;
   font-weight: 700;
-  font-family: "Chaparral-Pro-Regular";
 }
 #footer p {
   margin: 0 0 8px;
@@ -4320,7 +4306,6 @@ body.layout-boxed-lg #page {
   min-height: 110px;
   line-height: 20px;
   color: #d9d9d9;
-  font-family: "Roboto", sans-serif;
   font-size: 13px;
   position: relative;
   padding: 30px 0;
@@ -4344,7 +4329,6 @@ body.layout-boxed-lg #page {
 
 .ves-megamenu {
   background: transparent;
-  font-family: "Chaparral-Pro-Regular";
   font-weight: 500;
   /* menu level 1 */
   /* level 2 */
@@ -4447,7 +4431,6 @@ body.layout-boxed-lg #page {
   color: #6e6e6e;
   border: 0;
   min-width: 185px;
-  font-family: "Roboto", sans-serif;
   padding: 20px;
   background-color: white;
   text-align: left;
@@ -4548,7 +4531,6 @@ body.layout-boxed-lg #page {
   visibility: visible;
 }
 .ves-megamenu .mega-group > .dropdown-toggle {
-  font-family: "Roboto", sans-serif;
   margin-bottom: 12px;
   color: #000000!important;
 }
@@ -4704,7 +4686,6 @@ body.layout-boxed-lg #page {
 }
 .ves-verticalmenu .navbar-nav > li > a {
   display: block;
-  font-family: "Chaparral-Pro-Regular";
   font-size: 12px;
   padding-left: 52px;
   padding-top: 0;
@@ -4814,7 +4795,6 @@ body.layout-boxed-lg #page {
   border-radius: 0;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
-  font-family: "Roboto", sans-serif;
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
 }
@@ -4890,7 +4870,6 @@ body.layout-boxed-lg #page {
   text-transform: uppercase;
   line-height: normal;
   color: black;
-  font-family: "Roboto", sans-serif;
   font-size: 12px;
   text-align: left;
 }
@@ -4944,7 +4923,6 @@ body.layout-boxed-lg #page {
   text-transform: uppercase;
   padding: 0 22px;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
 }
 #ves-mainnav .nav-container #nav li a span {
   text-transform: uppercase;
@@ -5011,7 +4989,6 @@ body.layout-boxed-lg #page {
   float: none;
 }
 #ves-mainnav .nav-container #nav li ul li a {
-  font-family: "Roboto", sans-serif;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   display: block;
@@ -5093,7 +5070,6 @@ body.layout-boxed-lg #page {
   min-height: 40px;
   font-weight: 300;
   font-size: 12px;
-  font-family: "Chaparral-Pro-Regular";
   background: #222222;
   color: #b5b5b5;
 }
@@ -5173,7 +5149,6 @@ body.layout-boxed-lg #page {
   color: #b5b5b5;
 }
 #topbar .dropdown .dropdown-menu {
-  font-family: "Roboto", sans-serif;
   top: 100%;
   z-index: 9999 !important;
   opacity: 0;
@@ -5649,7 +5624,6 @@ body.layout-boxed-lg #page {
 .block-layered-nav .currently .label {
   display: inline-block;
   color: #323232;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 13px;
   position: 0;
@@ -5725,7 +5699,6 @@ body.layout-boxed-lg #page {
   font-size: 100%;
   padding: 0;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
 }
 .block-layered-nav dd.inactive {
   border-bottom: 0 none;
@@ -5752,12 +5725,10 @@ body.layout-boxed-lg #page {
 .ves-slideshow .shop-now {
   background-color: #e95565;
   border-radius: 3px;
-  font-family: "Chaparral-Pro-Regular";
   color: white;
   padding: 12px 12%;
   text-transform: uppercase;
   font-size: 100%;
-  font-weight: bold;
   display: inline-block;
 }
 .ves-slideshow .shop-now:hover {
@@ -5946,7 +5917,6 @@ body.layout-boxed-lg #page {
   text-align: center;
 }
 .block.venus-latest-block h4 {
-  font-family: "Roboto", sans-serif;
 }
 .block.venus-latest-block h4 a:hover {
   color: #04bca0;
@@ -5959,7 +5929,6 @@ body.layout-boxed-lg #page {
 }
 .block.venus-latest-block .blog-readmore {
   padding: 22px 0 15px;
-  font-family: "Roboto", sans-serif;
 }
 .block.venus-latest-block .blog-readmore a {
   color: #04bca0;
@@ -6167,7 +6136,6 @@ span.created-date, span.author, span.blog-category {
   border: 0;
 }
 .productdeals .lof-labelexpired {
-  font-family: "Roboto", sans-serif;
   padding: 5px;
 }
 
@@ -6261,7 +6229,6 @@ span.created-date, span.author, span.blog-category {
 }
 .product-categories .view a {
   color: #04bca0 !important;
-  font-family: "Roboto", sans-serif;
   line-height: 40px;
 }
 .product-categories .view a:hover {
@@ -6284,7 +6251,6 @@ span.created-date, span.author, span.blog-category {
 .ves-slideshow .big-green {
   height: auto!important;
   width: auto!important;
-  font-family: "Roboto", sans-serif;
 }
 .ves-slideshow .big-red {
   color: #e85565!important;
@@ -6297,18 +6263,16 @@ span.created-date, span.author, span.blog-category {
 .ves-slideshow .medium-yellow, .ves-slideshow .medium-orangelite, .ves-slideshow .medium-orange, .ves-slideshow .medium-salmon, .ves-slideshow .medium-pink,
 .ves-slideshow .medium-purple, .ves-slideshow .medium-violet, .ves-slideshow .medium-red, .ves-slideshow .medium-wood, .ves-slideshow .medium-black,
 .ves-slideshow .medium-white, .ves-slideshow .medium-gray {
-  font-family: "Roboto", sans-serif;
   color: #04bca0 !important;
 }
 .ves-slideshow .small-blue, .ves-slideshow .small-sky, .ves-slideshow .small-green, .ves-slideshow .small-lime,
 .ves-slideshow .small-yellow, .ves-slideshow .small-orangelite, .ves-slideshow .small-orange, .ves-slideshow .small-salmon, .ves-slideshow .small-pink,
 .ves-slideshow .small-purple, .ves-slideshow .small-violet, .ves-slideshow .small-red, .ves-slideshow .small-wood, .ves-slideshow .small-black,
 .ves-slideshow .small-white, .ves-slideshow .small-gray {
-  font-family: "Roboto", sans-serif;
 }
 .ves-slideshow .block-green {
-  background: #04bca0 !important;
-  opacity: 0.9!important;
+  background: #c7254e !important;
+  opacity: 0.6!important;
 }
 .ves-slideshow .big {
   font-size: 30px!important;
@@ -6395,7 +6359,7 @@ span.created-date, span.author, span.blog-category {
   text-align: center;
   display: inline-block;
   padding: 0 7px;
-  font-family: "Roboto", sans-serif;
+
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
@@ -6479,7 +6443,7 @@ span.created-date, span.author, span.blog-category {
 .product-block .name a {
   color: #454545;
   font-size: 14px;
-  font-family: "Chaparral-Pro-Regular";
+
   font-weight: 400;
 }
 .product-block .name a:hover {
@@ -6811,7 +6775,7 @@ span.created-date, span.author, span.blog-category {
   display: inline-block;
   *display: inline;
   zoom: 1;
-  font-family: "Roboto", sans-serif;
+
 }
 
 .carousel3 .block-content,
@@ -6907,7 +6871,7 @@ span.created-date, span.author, span.blog-category {
   line-height: 36px;
   margin-top: 0;
   font-weight: normal;
-  font-family: "Roboto", sans-serif;
+
   margin-bottom: 12px;
 }
 .product-info ul, .product-info ol {
@@ -7033,14 +6997,12 @@ span.created-date, span.author, span.blog-category {
   font-size: 13px;
   color: #888888;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
 }
 .product-info .price .text-price {
   display: none;
 }
 .product-info .price .price-gruop, .product-info .price .price-old {
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   color: #888888;
 }
@@ -7335,7 +7297,6 @@ span.created-date, span.author, span.blog-category {
 .ves-widget .widget-title {
   font-size: 16px;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 .ves-widget .products-row {
@@ -7373,7 +7334,6 @@ span.created-date, span.author, span.blog-category {
 .ves-widget .widget-product .name {
   color: #454545;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -7399,7 +7359,6 @@ span.created-date, span.author, span.blog-category {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
   margin-bottom: 20px;
   color: #171717;
   text-align: left;
@@ -7423,11 +7382,9 @@ span.created-date, span.author, span.blog-category {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
   margin-bottom: 14px;
 }
 .ves-widget .widget-html .content-wight-html li .decs-widget-html {
-  font-family: "Roboto", sans-serif;
   float: left;
   line-height: 20px;
   color: #777;
@@ -7622,7 +7579,6 @@ body,
   background: #04bca0;
   color: white;
   line-height: 30px;
-  font-family: "Chaparral-Pro-Regular";
 }
 
 /* Individual effects */

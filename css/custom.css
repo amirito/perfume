@@ -8,7 +8,7 @@
 body{
     /*background-image: url("../images/agsquare_@2X.png");*/
     background-color: #eee;
-    font-family: yekan;
+    font-family: yekan , verdana;
 }
 a{
     -webkit-transition: all .5s;
@@ -224,16 +224,45 @@ a{
 
 footer{
     height: 350px;
-    background-color: #292929;
+    background-color: #111;
+    background-image: url("../images/bot-bg.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
     margin-top: 0;
+    padding-top: 10px;
+    color: #bbb;
+}
+footer h3{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+footer li a{
+   color: #bbb;
+}
+footer li a:hover{
+    margin-right: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+footer li a i{
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+footer li a:hover i{
+    color: #c7254e;
 }
 .footer-top{
     border-top: solid 3px #c7254e;
-    background-color: #000;
+    background-color: #292929;
     text-align: center;
     margin-bottom: 0;
     padding: 10px;
-    min-height: 60px;
+    min-height: 80px;
     color: #ffffff;
 }
 .footer-top i{

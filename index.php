@@ -10,9 +10,11 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <link rel="stylesheet" type="text/css" href="css/component.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -20,6 +22,10 @@
     <script src="js/jquery.themepunch.revolution.min.js"></script>
     <script src="js/modernizr.custom.26887.js"></script>
     <script src="js/jquery.imgslider.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+
+
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -51,38 +57,17 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" dir="rtl">برندها
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Something else here</a></li>
+                        <?php
+                        $brand_query = "SELECT * FROM brands";
+                        $brand_result = mysqli_query($connection,$brand_query);
+                        while($brand_row = mysqli_fetch_assoc($brand_result)){
+                            echo"
+                            <li><a href='?page=products&brand=".$brand_row['brands_id']."'>".$brand_row['brands_name']."</a></li>
+                            ";
+                        }
+                        ?>
+
+
                     </ul>
                 </li>
                 <li class="pull-right"><a href="?page=products&category=men">مردانه</a></li>
@@ -100,13 +85,14 @@
     </div>
     <section class="color-5 text-center">
         <nav class="cl-effect-5">
-            <a href="#"><span data-hover="ورود"  style="width: 60px">ورود</span></a>
-            <a href="#"><span data-hover="ثبت نام" style="width: 60px">ثبت نام</span></a>
+            <a href="#"><span data-hover="ورود"  style="width: 60px" class="md-trigger" data-modal="modal-16">ورود</span></a>
+            <a href="?page=signup"><span data-hover="ثبت نام" style="width: 60px">ثبت نام</span></a>
         </nav>
     </section>
 </div>
 <div class="header-border"></div>
 <div class="clearfix"></div>
+
 <?php
 
 if(isset($_GET['page'])){
@@ -165,7 +151,39 @@ if(isset($_GET['page'])){
     </div>
 </footer>
 
+<div  class="md-modal md-effect-16" id="modal-16">
+    <div class="md-content">
 
+        <div>
+            <section class="main">
+                <form class="form-2" dir="rtl">
+                    <h1>ورود کاربر</h1>
+                    <p class="float pull-right">
+                        <label for="login"><i class="icon-user"></i>نام کاربری</label>
+                        <input type="text" name="login" placeholder="Username">
+                    </p>
+                    <p class="float pull-right">
+                        <label for="password"><i class="icon-lock"></i>کلمه عبور</label>
+                        <input type="password" name="password" placeholder="Password" class="showpassword">
+                    </p>
+                    <p class="clearfix">
+                        <a href="#" class="log-twitter">Log in with Facebook</a>
+                        <input type="submit" name="login" value="Log in">
+                    </p>
+                    <button class="md-close btn btn-danger btn-block">بستن</button>
+                </form>​​​
+            </section>
 
+        </div>
+    </div>
+</div>
+<script src="js/classie.js"></script>
+<script src="js/modalEffects.js"></script>
+<script>
+    // this is important for IEs
+    var polyfilter_scriptpath = '/js/';
+</script>
+<script src="js/cssParser.js"></script>
+<script src="js/css-filters-polyfill.js"></script>
 </body>
 </html>

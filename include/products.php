@@ -1,3 +1,6 @@
+<section class="container main-content">
+    <div class="title"><h1 class="title-text">جدیدترین محصولات</h1></div>
+    <div class="main">
 <?php
 /**
  * Created by PhpStorm.
@@ -24,17 +27,24 @@ $product_result = mysqli_query($connection,$product_query);
 while($product_row = mysqli_fetch_assoc($product_result)){
 
     echo "
+	            <div class='col-md-4'>
+                    <div class='view view-tenth'>
+                        <img src='images/products/".$product_row['images_image']."'/>
 
-				<div class='col-lg-3 col-sm-3 hero-feature text-center'>
-	                <div class='thumbnail'>
-	                	<a href='?page=productdetail&id=".$product_row['products_id']."' class='link-p'>
-	                    	<img src='images/products/".$product_row['images_image']."' alt=''>
-	                	</a>
-	                    <div class='caption prod-caption'>
-	                        <h4><a href='?page=productdetail&id=".$product_row['products_id']."' class='commando'>".$product_row['products_name']."</a></h4>
-	                    </div>
-	                </div>
-	            </div>
+                        <div class='mask mask-1'></div>
+                        <div class='mask mask-2'></div>
+                        <div class='content'>
+                            <h2>".$product_row['products_name']."</h2>
+
+                            <p dir='rtl'>تیری موگلر ای من پیور هاوانه (تیری ماگلر ای من پور هاوان)</p>
+                            <a href='?page=productdetail&id=".$product_row['products_id']."' class='info'>بیشتر</a>
+                        </div>
+                    </div>
+                </div>
 
 			";
 }
+?>
+    </div>
+</section>
+

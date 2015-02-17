@@ -1,81 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>فروشگاه عطر</title>
-    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <link rel="stylesheet" type="text/css" href="css/component.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.themepunch.plugins.min.js"></script>
-    <script src="js/jquery.themepunch.revolution.min.js"></script>
-    <script src="js/modernizr.custom.26887.js"></script>
-    <script src="js/jquery.imgslider.js"></script>
-</head>
-<body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Brand</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown
-                        <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
-
-<div class="jumbotron header-bottom" dir="rtl">
-    <div class="container text-center">
-        <a href="#"><img src="images/logo-home.png"></a>
-    </div>
-    <section class="color-5 text-center">
-        <nav class="cl-effect-5">
-            <a href="#"><span data-hover="مردانه">مردانه</span></a>
-            <a href="#"><span data-hover="زنانه">زنانه</span></a>
-        </nav>
-    </section>
-</div>
-<div class="header-border"></div>
-<div class="clearfix"></div>
 <!-- slider start -->
 <div class="banner ves-slideshow">
 
@@ -87,8 +9,8 @@
             <ul>
 
                 <li data-masterspeed="700" data-transition="random" data-slotamount="7"
-                    data-thumb="images/banner/brad-pitt.jpg">
-                    <img src="images/dummy.png" data-lazyload="images/banner/brad-pitt.jpg" alt="Image"
+                    data-thumb="images/banner/beckham.jpg">
+                    <img src="images/dummy.png" data-lazyload="images/banner/beckham.jpg" alt="Image"
                          data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat"/>
 
                     <div class="caption block-green  sft stt"
@@ -113,7 +35,7 @@
                          data-speed="500"
                          data-start="500"
                          data-easing="swing" data-end="28200" data-endspeed="500" data-endeasing="swing">
-                        <img src="images/7.png" style=" width:128px; height:129px;" alt="image"/>
+
                     </div>
                     <div class="caption small-blue  sfr str"
                          data-x="962.6"
@@ -161,7 +83,7 @@
                          data-speed="500"
                          data-start="1700"
                          data-easing="swing" data-end="26300" data-endspeed="500" data-endeasing="swing">
-                        <div style=""><a class="shop-now" href="#">نمایش محصولات</a></div>
+                        <div style=""><a class="shop-now" href="?page=products&categoey=men">نمایش محصولات</a></div>
                     </div>
                 </li>
                 <li data-masterspeed="700" data-transition="random" data-slotamount="7"
@@ -191,7 +113,7 @@
                          data-speed="500"
                          data-start="500"
                          data-easing="swing" data-end="28200" data-endspeed="500" data-endeasing="swing">
-                        <img src="images/7.png" style=" width:128px; height:129px;" alt="image"/>
+
                     </div>
                     <div class="caption small-blue  sfb stb"
                          data-x="109.6"
@@ -262,45 +184,45 @@
         tpj.fn.css = tpj.fn.cssOriginal;
 
     tpj('#sliderlayer1142006107').revolution(
-            {
-                delay: 9000,
-                startheight: 515,
-                startwidth: 1170,
+        {
+            delay: 9000,
+            startheight: 515,
+            startwidth: 1170,
 
 
-                hideThumbs: 0,
+            hideThumbs: 0,
 
-                thumbWidth: 100,
-                thumbHeight: 50,
-                thumbAmount: 5,
+            thumbWidth: 100,
+            thumbHeight: 50,
+            thumbAmount: 5,
 
-                navigationType: "bullet",
-                navigationArrows: "verticalcentered",
-
-
-                navigationStyle: "round",
+            navigationType: "bullet",
+            navigationArrows: "verticalcentered",
 
 
-                navOffsetHorizontal: 0,
-                navOffsetVertical: 0,
+            navigationStyle: "round",
 
-                touchenabled: "on",
-                onHoverStop: "on",
-                shuffle: "off",
-                stopAtSlide: -1,
-                stopAfterLoops: -1,
 
-                hideCaptionAtLimit: 0,
-                hideAllCaptionAtLilmit: 0,
-                hideSliderAtLimit: 0,
-                hideTimerBar: "off",
-                fullWidth: "off",
-                forceFullWidth: "off",
-                fullScreen: "off",
-                lazyLoad: "on",
-                shadow: 0
+            navOffsetHorizontal: 0,
+            navOffsetVertical: 0,
 
-            });
+            touchenabled: "on",
+            onHoverStop: "on",
+            shuffle: "off",
+            stopAtSlide: -1,
+            stopAfterLoops: -1,
+
+            hideCaptionAtLimit: 0,
+            hideAllCaptionAtLilmit: 0,
+            hideSliderAtLimit: 0,
+            hideTimerBar: "off",
+            fullWidth: "off",
+            forceFullWidth: "off",
+            fullScreen: "off",
+            lazyLoad: "on",
+            shadow: 0
+
+        });
 </script>
 </div>
 <!-- slider end -->
@@ -312,7 +234,7 @@
 </div>
 
 <section class="container main-content">
-    <div class="title"><h1 class="title-text">محصولات</h1></div>
+    <div class="title"><h1 class="title-text">جدیدترین محصولات</h1></div>
     <div class="main">
         <!-- tenth EXAMPLE -->
         <div class="col-md-4">
@@ -406,107 +328,98 @@
 
     </div>
 </section>
-<div class="clearfix"></div>
-<section class="container">
+<section class="container main-content">
     <div class="title"><h1 class="title-text">پرفروش ترین محصولات</h1></div>
-    <div class="fs-slider" id="fs-slider">
+    <div class="main">
+        <!-- tenth EXAMPLE -->
+        <div class="col-md-4">
+            <div class="view view-tenth">
+                <img src="images/1.jpg"/>
 
-        <figure>
-            <img src="images/products/1.jpg" alt="image01" />
-            <figcaption>
-                <h3>chanel N5</h3>
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <h2>A*Men Pure Havane</h2>
 
-            </figcaption>
-        </figure>
+                    <p dir="rtl">تیری موگلر ای من پیور هاوانه (تیری ماگلر ای من پور هاوان)</p>
+                    <a href="#" class="info">بیشتر</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="view view-tenth">
+                <img src="images/2.jpg"/>
 
-        <figure>
-            <img src="images/products/2.jpg" alt="image02" />
-            <figcaption>
-                <h3>coco chanel</h3>
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <h2>Valentina Oud Assoluto</h2>
 
-            </figcaption>
-        </figure>
+                    <p dir="rtl">والنتینو والنتینا عود اسولوتو (عود ابسولوت)</p>
+                    <a href="#" class="info">بیشتر</a>
+                </div>
+            </div>
+        </div>
 
-        <figure>
-            <img src="images/products/3.jpg" alt="image03" />
-            <figcaption>
-                <h3>kim kardashian</h3>
+        <div class="col-md-4">
+            <div class="view view-tenth">
+                <img src="images/3.jpg"/>
 
-            </figcaption>
-        </figure>
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <h2>Omnia Indian Garnet</h2>
 
-        <figure>
-            <img src="images/products/4.jpg" alt="image04" />
-            <figcaption>
-                <h3>BLUE chanel</h3>
+                    <p dir="rtl">بولگاری اومنیا ایندیان گارنت (بلگاری امنیا ایندین گرنت)</p>
+                    <a href="#" class="info">بیشتر</a>
+                </div>
+            </div>
+        </div>
 
-            </figcaption>
-        </figure>
+        <div class="col-md-4">
+            <div class="view view-tenth">
+                <img src="images/4.jpg"/>
 
-        <figure>
-            <img src="images/products/5.jpg" alt="image05" />
-            <figcaption>
-                <h3>ANGEL</h3>
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <h2>He Wood Intense</h2>
 
-            </figcaption>
-        </figure>
+                    <p dir="rtl">دسکوارد هی وود اینتنس</p>
+                    <a href="#" class="info">بیشتر</a>
+                </div>
+            </div>
+        </div>
 
-    </div><!-- /fs-slider -->
+        <div class="col-md-4">
+            <div class="view view-tenth">
+                <img src="images/5.jpg"/>
+
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <h2>Homme Exceptionnel</h2>
+
+                    <p dir="rtl">مونت بلنک هوم اکسپشنل (مون بلان اکسپشنال)</p>
+                    <a href="#" class="info">بیشتر</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="view view-tenth">
+                <img src="images/6.jpg"/>
+
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <h2>Shalimar Parfum Initial</h2>
+
+                    <p dir="rtl">گرلن شالیمار پارفوم اینیتیال (پرفیوم اینیشیال)</p>
+                    <a href="#" class="info">بیشتر</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </section>
-<div class="clearfix"></div>
-<hr>
-<div class="footer-top">
-    <div class="col-md-6">
-        <ul class="list-unstyled list-inline">
-            <li><a href="#"><i class="fa fa-facebook"></i> </a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i> </a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i> </a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i> </a></li>
-        </ul>
-    </div>
-    <div class="col-md-6"></div>
-</div>
-<div class="clearfix"></div>
-<footer>
-    <div class="col-sm-9" style="border-bottom: solid 1px #bbb">
-        <div class="col-sm-4" dir="rtl">
-            <h3>تماس با ما</h3>
-            <ul class="list-unstyled">
-                <li>تهران - خیابان آزادی - خیابان نمایندگی - پلاک 1 - واحد 15</li>
-                <li>تلفن: <a href="callto:+982166576199">66576199-021</a></li>
-                <li>ایمیل: <a href="mailto:info@rayweb.ir">info@rayweb.ir</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-4" dir="rtl">
-            <h3>ارتباط با ما</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1620.018638097106!2d51.3709818!3d35.7007003!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sir!4v1421244078741" width="100%" height="200" frameborder="0" style="border:0"></iframe>
-        </div>
-        <div class="col-sm-4" dir="rtl">
-            <h3>لینک های مرتبط</h3>
-            <ul class="list-unstyled text-right">
-                <li><a href="#"><i class="fa fa-chevron-circle-left"></i> صفحه اصلی</a></li>
-                <li><a href="#"><i class="fa fa-chevron-circle-left"></i> مردانه</a> </li>
-                <li><a href="#"><i class="fa fa-chevron-circle-left"></i> زنانه</a> </li>
-                <li><a href="#"><i class="fa fa-chevron-circle-left"></i> درباره ما</a> </li>
-                <li><a href="#"><i class="fa fa-chevron-circle-left"></i> تماس با ما</a> </li>
-            </ul>
-        </div>
-    </div>
-    <div class="clearfix"></div>
-    <div>
-        <h4 dir="ltr" class="text-center" style="font-family: verdana">2014 © Rayweb. All rights reserverd. </h4>
-    </div>
-</footer>
-
-
-
-<script type="text/javascript">
-    $(function() {
-
-        $( '#fs-slider' ).imgslider();
-
-    });
-</script>
-
-</body>
-</html>

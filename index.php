@@ -1,4 +1,45 @@
-<?php require_once('core/core.php') ?>
+<?php require_once('core/core.php');
+
+
+if(isset($_POST['id'])){
+    if(!isset($_SESSION['id'])){
+        $_SESSION['id'][0]= 0;
+        $_SESSION['id'][1]= $_POST['id'];
+    }else{
+
+        if(!array_search($_POST['id'],$_SESSION['id'],true)){
+            array_push($_SESSION['id'],$_POST['id']);
+        }else{
+            $iterative = "این محصول قبلاً انتخاب شده";
+        }
+
+    }
+    //var_dump($_SESSION['id']);
+}
+
+
+$error = '';
+if(isset($_POST['login'])){
+    $login_name = $_POST['login_name'];
+    $login_password = $_POST['login_password'];
+    $login_query = "SELECT * FROM users WHERE users_email='$login_name' AND users_password=SHA1('$login_password')";
+    $login_result = mysqli_query($connection , $login_query);
+    $login_count = mysqli_num_rows($login_result);
+    if($login_count === 1){
+        $login_row = mysqli_fetch_assoc($login_result);
+        $_SESSION['MM_ID'] = $login_row['users_id'];
+
+        header('Location: index.php?page=home');
+    }else{
+        $error = '
+            <div class="alert alert-danger alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <strong>خطا!</strong> نام کاربری یا کلمه عبور صحیح نمیباشد .
+            </div>
+            ';
+    }
+}
+?>
 
 <!DOCTYPE html>
 <html>
@@ -9,10 +50,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <link rel="stylesheet" type="text/css" href="css/component.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/form.css">
 
 
@@ -29,7 +68,7 @@
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
+    <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -41,7 +80,67 @@
             </button>
             <a class="navbar-brand" href="?page=home">Brand</a>
         </div>
+        <!-- --------------------shopping cart--------------------- -->
+        <?php
+            #### delete item
+            if(isset($_POST['del_id'])){
+                $del = $_POST['del_id'];
+                foreach($_SESSION['id'] as $key2=>$value2){
+                    if($del==$value2){
+                        unset($_SESSION['id'][$key2]);
+                    }
+                }
+            }
+        ?>
+        <div class="col-lg-3 col-md-4 col-sm-5">
+            <button type="button" class="btn btn-success btn-block dropdown-toggle" data-toggle="dropdown" style="font-size:22px !important">سبد خرید <i class="fa fa-shopping-cart"></i></button>
+            <ul class="dropdown-menu cart-content" role="menu">
+                <?php
+                $totalPrice = 0 ;
 
+                if(isset($_SESSION['id'])){
+
+                    $i = 1;
+
+                    foreach($_SESSION['id'] as $key=>$value){
+                        ### show detail
+                        if($key != 0){
+                            $pro_query = "SELECT * FROM products WHERE products_id = '$value' ; ";
+                            $pro_result = mysqli_query($connection,$pro_query);
+                            $pro_row = mysqli_fetch_assoc($pro_result);
+                            echo '<li style="margin-top:10px">
+											<a href="detail.html" class="inline">
+												<p class="commando">'.$pro_row['products_name'].' </p>
+												<p>قیمت : '.$pro_row['products_price'].'</p>
+											</a>
+											<form method="post">
+												<input type="hidden" name="del_id" value="'.$pro_row['products_id'].'">
+												<input type="submit" name="delete" class="btn btn-danger btn-block" value="حذف" class="btn-link">
+											</form>
+										</li><hr>';
+                            $i++;
+                            $totalPrice += $pro_row['products_price'];
+                        }
+                    }
+
+                }else{
+                    echo 'محصولی انتخاب نشده';
+                }
+
+                ?>
+
+                <li class="divider"></li>
+                <li><a href="#">مجموع قیمت: <?php echo $totalPrice; ?></a>
+                    <?php
+                    if(isset($_SESSION['MM_ID'])){
+                        echo'
+                                	<a class="btn btn-success" href="?page=buy">نهایی کردن خرید</a>';
+                    }
+                    ?>
+                </li>
+            </ul>
+        </div>
+        <!-- --------------------/shopping cart--------------------- -->
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
@@ -51,12 +150,13 @@
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
+
             <ul class="nav navbar-nav navbar-right">
 
                 <li class="dropdown pull-right">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" dir="rtl">برندها
                         <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu dropdown-brand" role="menu">
                         <?php
                         $brand_query = "SELECT * FROM brands";
                         $brand_result = mysqli_query($connection,$brand_query);
@@ -72,6 +172,13 @@
                 </li>
                 <li class="pull-right"><a href="?page=products&category=men">مردانه</a></li>
                 <li class="pull-right"><a href="?page=products&category=women">زنانه</a></li>
+                <?php
+                if(isset($_SESSION['MM_ID'])){
+                    echo '<li class="pull-right"><a href="logout.php">خروج</a></li>';
+                }
+
+                ?>
+
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -84,11 +191,29 @@
         <a href="?page=home"><img src="images/logo-home.png"></a>
     </div>
     <section class="color-5 text-center">
-        <nav class="cl-effect-5">
-            <a href="#"><span data-hover="ورود"  style="width: 60px" class="md-trigger" data-modal="modal-16">ورود</span></a>
-            <a href="?page=signup"><span data-hover="ثبت نام" style="width: 60px">ثبت نام</span></a>
-        </nav>
+        <?php
+        if(!isset($_SESSION['MM_ID'])){
+            echo '
+            <nav class="cl-effect-5">
+                <a href="#"><span data-hover="ورود"  style="width: 60px" class="md-trigger" data-modal="modal-16">ورود</span></a>
+                <a href="?page=signup"><span data-hover="ثبت نام" style="width: 60px">ثبت نام</span></a>
+            </nav>
+        ';
+        }else{
+            $signed_query = "SELECT * FROM users WHERE users_id = '$_SESSION[MM_ID]'";
+            $signed_result = mysqli_query($connection , $signed_query);
+            $signed_row = mysqli_fetch_assoc($signed_result);
+            echo '
+                <nav class="cl-effect-5">
+                    <a href="#"><span data-hover="'.$signed_row['users_firstName'].'" style="width: auto;">'.$signed_row['users_firstName'].'</span> عزیز خوش آمدید</a>
+
+                </nav>
+            ';
+        }
+
+        ?>
     </section>
+    <?php echo $error; ?>
 </div>
 <div class="header-border"></div>
 <div class="clearfix"></div>
@@ -156,21 +281,22 @@ if(isset($_GET['page'])){
 
         <div>
             <section class="main">
-                <form class="form-2" dir="rtl">
+                <form class="form-2" dir="rtl" method="post">
                     <h1>ورود کاربر</h1>
                     <p class="float pull-right">
                         <label for="login"><i class="icon-user"></i>نام کاربری</label>
-                        <input type="text" name="login" placeholder="Username">
+                        <input type="text" name="login_name" placeholder="Username">
                     </p>
                     <p class="float pull-right">
                         <label for="password"><i class="icon-lock"></i>کلمه عبور</label>
-                        <input type="password" name="password" placeholder="Password" class="showpassword">
+                        <input type="password" name="login_password" placeholder="Password" class="showpassword">
                     </p>
                     <p class="clearfix">
                         <a href="#" class="log-twitter">Log in with Facebook</a>
                         <input type="submit" name="login" value="Log in">
                     </p>
                     <button class="md-close btn btn-danger btn-block">بستن</button>
+
                 </form>​​​
             </section>
 

@@ -1,6 +1,10 @@
-<section class="container main-content">
-    <div class="title"><h1 class="title-text">جدیدترین محصولات</h1></div>
-    <div class="main">
+<?php
+    $brand_query = "SELECT * FROM brands";
+    $brand_result = mysqli_query($connection,$brand_query);
+    $brand_row = mysqli_fetch_assoc($brand_result);
+?>
+<div class="grid container">
+    <div class="title"><h1 class="title-text" dir="rtl">محصولات <?php if(isset($_GET['category']) && $_GET['category']=='men'){echo 'مردانه';} elseif(isset($_GET['category']) && $_GET['category']=='women'){echo 'زنانه';} if(isset($_GET['brand'])){echo $brand_row['brands_name'];} ?> </h1></div>
 <?php
 /**
  * Created by PhpStorm.
@@ -27,24 +31,27 @@ $product_result = mysqli_query($connection,$product_query);
 while($product_row = mysqli_fetch_assoc($product_result)){
 
     echo "
-	            <div class='col-md-4'>
-                    <div class='view view-tenth'>
-                        <img src='images/products/".$product_row['images_image']."'/>
-
-                        <div class='mask mask-1'></div>
-                        <div class='mask mask-2'></div>
-                        <div class='content'>
-                            <h2>".$product_row['products_name']."</h2>
-
-                            <p dir='rtl'>تیری موگلر ای من پیور هاوانه (تیری ماگلر ای من پور هاوان)</p>
-                            <a href='?page=productdetail&id=".$product_row['products_id']."' class='info'>بیشتر</a>
-                        </div>
-                    </div>
-                </div>
-
+            <div class='col-md-3 col-sm-4 col-xs-6'>
+                <figure class='effect-zoe'>
+                    <img src='images/products/".$product_row['images_image']."' alt='img26'/>
+                    <figcaption>
+                        <form method='post'>
+                        <h2>".$product_row['products_price']."</h2>
+                        <p class='icon-links tt-wrapper'>
+                            <a href='#'><i class='fa fa-heart'></i><span>پسندیدم</span></a>
+                            <a href='#'><i class='fa fa-eye'></i><span>مشخصات</span></a>
+                            <input type='hidden' name='id' value='".$product_row['products_id']."'>
+                            <a><button type='submit'><i class='fa fa-shopping-cart'></i><span>افزودن به سبد خرید</span></button></a>
+                        </p>
+                        <p class='description'>".$product_row['products_name']."</p>
+                        </form>
+                    </figcaption>
+                </figure>
+            </div>
 			";
 }
 ?>
-    </div>
-</section>
 
+
+
+</div>

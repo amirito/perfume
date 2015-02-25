@@ -233,192 +233,192 @@
     <div class="col-md-6 effect"><a class="overlay"><img src="images/timthumb.php.jpg" class="img-responsive"></a></div>
 </div>
 
-<section class="container main-content">
+<section class="grid container">
     <div class="title"><h1 class="title-text">جدیدترین محصولات</h1></div>
     <div class="main">
         <!-- tenth EXAMPLE -->
-        <div class="col-md-4">
-            <div class="view view-tenth">
-                <img src="images/1.jpg"/>
-
-                <div class="mask mask-1"></div>
-                <div class="mask mask-2"></div>
-                <div class="content">
-                    <h2>A*Men Pure Havane</h2>
-
-                    <p dir="rtl">تیری موگلر ای من پیور هاوانه (تیری ماگلر ای من پور هاوان)</p>
-                    <a href="#" class="info">بیشتر</a>
-                </div>
-            </div>
+        <div class='col-md-3 col-sm-4 col-xs-6'>
+            <figure class='effect-zoe'>
+                <img src='images/1.jpg' alt='img1'/>
+                <figcaption>
+                    <h2>قیمت</h2>
+                    <p class='icon-links tt-wrapper'>
+                        <a href='#'><i class='fa fa-heart'></i><span>پسندیدم</span></a>
+                        <a href='#'><i class='fa fa-shopping-cart'></i><span>افزودن به سبد خرید</span></a>
+                        <a href='#'><i class='fa fa-eye'></i><span>مشخصات</span></a>
+                    </p>
+                    <p class='description'>A*</p>
+                </figcaption>
+            </figure>
         </div>
-        <div class="col-md-4">
-            <div class="view view-tenth">
-                <img src="images/2.jpg"/>
-
-                <div class="mask mask-1"></div>
-                <div class="mask mask-2"></div>
-                <div class="content">
-                    <h2>Valentina Oud Assoluto</h2>
-
-                    <p dir="rtl">والنتینو والنتینا عود اسولوتو (عود ابسولوت)</p>
-                    <a href="#" class="info">بیشتر</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="view view-tenth">
-                <img src="images/3.jpg"/>
-
-                <div class="mask mask-1"></div>
-                <div class="mask mask-2"></div>
-                <div class="content">
-                    <h2>Omnia Indian Garnet</h2>
-
-                    <p dir="rtl">بولگاری اومنیا ایندیان گارنت (بلگاری امنیا ایندین گرنت)</p>
-                    <a href="#" class="info">بیشتر</a>
-                </div>
-            </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <figure class='effect-zoe'>
+                <img src='images/2.jpg' alt='img2'/>
+                <figcaption>
+                    <h2>قیمت</h2>
+                    <p class='icon-links tt-wrapper'>
+                        <a href='#'><i class='fa fa-heart'></i><span>پسندیدم</span></a>
+                        <a href='#'><i class='fa fa-shopping-cart'></i><span>افزودن به سبد خرید</span></a>
+                        <a href='#'><i class='fa fa-eye'></i><span>مشخصات</span></a>
+                    </p>
+                    <p class='description'>Valentina Oud Assoluto</p>
+                </figcaption>
+            </figure>
         </div>
 
-        <div class="col-md-4">
-            <div class="view view-tenth">
-                <img src="images/4.jpg"/>
-
-                <div class="mask mask-1"></div>
-                <div class="mask mask-2"></div>
-                <div class="content">
-                    <h2>He Wood Intense</h2>
-
-                    <p dir="rtl">دسکوارد هی وود اینتنس</p>
-                    <a href="#" class="info">بیشتر</a>
-                </div>
-            </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <figure class='effect-zoe'>
+                <img src='images/3.jpg' alt='img3'/>
+                <figcaption>
+                    <h2>قیمت</h2>
+                    <p class='icon-links tt-wrapper'>
+                        <a href='#'><i class='fa fa-heart'></i><span>پسندیدم</span></a>
+                        <a href='#'><i class='fa fa-shopping-cart'></i><span>افزودن به سبد خرید</span></a>
+                        <a href='#'><i class='fa fa-eye'></i><span>مشخصات</span></a>
+                    </p>
+                    <p class='description'>Omnia Indian Garnet</p>
+                </figcaption>
+            </figure>
         </div>
 
-        <div class="col-md-4">
-            <div class="view view-tenth">
-                <img src="images/5.jpg"/>
-
-                <div class="mask mask-1"></div>
-                <div class="mask mask-2"></div>
-                <div class="content">
-                    <h2>Homme Exceptionnel</h2>
-
-                    <p dir="rtl">مونت بلنک هوم اکسپشنل (مون بلان اکسپشنال)</p>
-                    <a href="#" class="info">بیشتر</a>
-                </div>
-            </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <figure class='effect-zoe'>
+                <img src='images/4.jpg' alt='img4'/>
+                <figcaption>
+                    <h2>قیمت</h2>
+                    <p class='icon-links tt-wrapper'>
+                        <a href='#'><i class='fa fa-heart'></i><span>پسندیدم</span></a>
+                        <a href='#'><i class='fa fa-shopping-cart'></i><span>افزودن به سبد خرید</span></a>
+                        <a href='#'><i class='fa fa-eye'></i><span>مشخصات</span></a>
+                    </p>
+                    <p class='description'>دسکوارد هی وود اینتنس</p>
+                </figcaption>
+            </figure>
         </div>
 
-        <div class="col-md-4">
-            <div class="view view-tenth">
-                <img src="images/6.jpg"/>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <figure class='effect-zoe'>
+                <img src='images/5.jpg' alt='img5'/>
+                <figcaption>
+                    <h2>قیمت</h2>
+                    <p class='icon-links tt-wrapper'>
+                        <a href='#'><i class='fa fa-heart'></i><span>پسندیدم</span></a>
+                        <a href='#'><i class='fa fa-shopping-cart'></i><span>افزودن به سبد خرید</span></a>
+                        <a href='#'><i class='fa fa-eye'></i><span>مشخصات</span></a>
+                    </p>
+                    <p class='description'>مونت بلنک هوم اکسپشنل (مون بلان اکسپشنال)</p>
+                </figcaption>
+            </figure>
+        </div>
 
-                <div class="mask mask-1"></div>
-                <div class="mask mask-2"></div>
-                <div class="content">
-                    <h2>Shalimar Parfum Initial</h2>
-
-                    <p dir="rtl">گرلن شالیمار پارفوم اینیتیال (پرفیوم اینیشیال)</p>
-                    <a href="#" class="info">بیشتر</a>
-                </div>
-            </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <figure class='effect-zoe'>
+                <img src='images/6.jpg' alt='img6'/>
+                <figcaption>
+                    <h2>قیمت</h2>
+                    <p class='icon-links tt-wrapper'>
+                        <a href='#'><i class='fa fa-heart'></i><span>پسندیدم</span></a>
+                        <a href='#'><i class='fa fa-shopping-cart'></i><span>افزودن به سبد خرید</span></a>
+                        <a href='#'><i class='fa fa-eye'></i><span>مشخصات</span></a>
+                    </p>
+                    <p class='description'>گرلن شالیمار پارفوم اینیتیال (پرفیوم اینیشیال)</p>
+                </figcaption>
+            </figure>
         </div>
 
     </div>
 </section>
-<section class="container main-content">
+<section class="grid container">
     <div class="title"><h1 class="title-text">پرفروش ترین محصولات</h1></div>
     <div class="main">
         <!-- tenth EXAMPLE -->
-        <div class="col-md-4">
-            <div class="view view-tenth">
-                <img src="images/1.jpg"/>
-
-                <div class="mask mask-1"></div>
-                <div class="mask mask-2"></div>
-                <div class="content">
-                    <h2>A*Men Pure Havane</h2>
-
-                    <p dir="rtl">تیری موگلر ای من پیور هاوانه (تیری ماگلر ای من پور هاوان)</p>
-                    <a href="#" class="info">بیشتر</a>
-                </div>
-            </div>
+        <div class='col-md-3 col-sm-4 col-xs-6'>
+            <figure class='effect-zoe'>
+                <img src='images/1.jpg' alt='img1'/>
+                <figcaption>
+                    <h2>قیمت</h2>
+                    <p class='icon-links tt-wrapper'>
+                        <a href='#'><i class='fa fa-heart'></i><span>پسندیدم</span></a>
+                        <a href='#'><i class='fa fa-shopping-cart'></i><span>افزودن به سبد خرید</span></a>
+                        <a href='#'><i class='fa fa-eye'></i><span>مشخصات</span></a>
+                    </p>
+                    <p class='description'>A*</p>
+                </figcaption>
+            </figure>
         </div>
-        <div class="col-md-4">
-            <div class="view view-tenth">
-                <img src="images/2.jpg"/>
-
-                <div class="mask mask-1"></div>
-                <div class="mask mask-2"></div>
-                <div class="content">
-                    <h2>Valentina Oud Assoluto</h2>
-
-                    <p dir="rtl">والنتینو والنتینا عود اسولوتو (عود ابسولوت)</p>
-                    <a href="#" class="info">بیشتر</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="view view-tenth">
-                <img src="images/3.jpg"/>
-
-                <div class="mask mask-1"></div>
-                <div class="mask mask-2"></div>
-                <div class="content">
-                    <h2>Omnia Indian Garnet</h2>
-
-                    <p dir="rtl">بولگاری اومنیا ایندیان گارنت (بلگاری امنیا ایندین گرنت)</p>
-                    <a href="#" class="info">بیشتر</a>
-                </div>
-            </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <figure class='effect-zoe'>
+                <img src='images/2.jpg' alt='img2'/>
+                <figcaption>
+                    <h2>قیمت</h2>
+                    <p class='icon-links tt-wrapper'>
+                        <a href='#'><i class='fa fa-heart'></i><span>پسندیدم</span></a>
+                        <a href='#'><i class='fa fa-shopping-cart'></i><span>افزودن به سبد خرید</span></a>
+                        <a href='#'><i class='fa fa-eye'></i><span>مشخصات</span></a>
+                    </p>
+                    <p class='description'>Valentina Oud Assoluto</p>
+                </figcaption>
+            </figure>
         </div>
 
-        <div class="col-md-4">
-            <div class="view view-tenth">
-                <img src="images/4.jpg"/>
-
-                <div class="mask mask-1"></div>
-                <div class="mask mask-2"></div>
-                <div class="content">
-                    <h2>He Wood Intense</h2>
-
-                    <p dir="rtl">دسکوارد هی وود اینتنس</p>
-                    <a href="#" class="info">بیشتر</a>
-                </div>
-            </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <figure class='effect-zoe'>
+                <img src='images/3.jpg' alt='img3'/>
+                <figcaption>
+                    <h2>قیمت</h2>
+                    <p class='icon-links tt-wrapper'>
+                        <a href='#'><i class='fa fa-heart'></i><span>پسندیدم</span></a>
+                        <a href='#'><i class='fa fa-shopping-cart'></i><span>افزودن به سبد خرید</span></a>
+                        <a href='#'><i class='fa fa-eye'></i><span>مشخصات</span></a>
+                    </p>
+                    <p class='description'>Omnia Indian Garnet</p>
+                </figcaption>
+            </figure>
         </div>
 
-        <div class="col-md-4">
-            <div class="view view-tenth">
-                <img src="images/5.jpg"/>
-
-                <div class="mask mask-1"></div>
-                <div class="mask mask-2"></div>
-                <div class="content">
-                    <h2>Homme Exceptionnel</h2>
-
-                    <p dir="rtl">مونت بلنک هوم اکسپشنل (مون بلان اکسپشنال)</p>
-                    <a href="#" class="info">بیشتر</a>
-                </div>
-            </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <figure class='effect-zoe'>
+                <img src='images/4.jpg' alt='img4'/>
+                <figcaption>
+                    <h2>قیمت</h2>
+                    <p class='icon-links tt-wrapper'>
+                        <a href='#'><i class='fa fa-heart'></i><span>پسندیدم</span></a>
+                        <a href='#'><i class='fa fa-shopping-cart'></i><span>افزودن به سبد خرید</span></a>
+                        <a href='#'><i class='fa fa-eye'></i><span>مشخصات</span></a>
+                    </p>
+                    <p class='description'>دسکوارد هی وود اینتنس</p>
+                </figcaption>
+            </figure>
         </div>
 
-        <div class="col-md-4">
-            <div class="view view-tenth">
-                <img src="images/6.jpg"/>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <figure class='effect-zoe'>
+                <img src='images/5.jpg' alt='img5'/>
+                <figcaption>
+                    <h2>قیمت</h2>
+                    <p class='icon-links tt-wrapper'>
+                        <a href='#'><i class='fa fa-heart'></i><span>پسندیدم</span></a>
+                        <a href='#'><i class='fa fa-shopping-cart'></i><span>افزودن به سبد خرید</span></a>
+                        <a href='#'><i class='fa fa-eye'></i><span>مشخصات</span></a>
+                    </p>
+                    <p class='description'>مونت بلنک هوم اکسپشنل (مون بلان اکسپشنال)</p>
+                </figcaption>
+            </figure>
+        </div>
 
-                <div class="mask mask-1"></div>
-                <div class="mask mask-2"></div>
-                <div class="content">
-                    <h2>Shalimar Parfum Initial</h2>
-
-                    <p dir="rtl">گرلن شالیمار پارفوم اینیتیال (پرفیوم اینیشیال)</p>
-                    <a href="#" class="info">بیشتر</a>
-                </div>
-            </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <figure class='effect-zoe'>
+                <img src='images/6.jpg' alt='img6'/>
+                <figcaption>
+                    <h2>قیمت</h2>
+                    <p class='icon-links tt-wrapper'>
+                        <a href='#'><i class='fa fa-heart'></i><span>پسندیدم</span></a>
+                        <a href='#'><i class='fa fa-shopping-cart'></i><span>افزودن به سبد خرید</span></a>
+                        <a href='#'><i class='fa fa-eye'></i><span>مشخصات</span></a>
+                    </p>
+                    <p class='description'>گرلن شالیمار پارفوم اینیتیال (پرفیوم اینیشیال)</p>
+                </figcaption>
+            </figure>
         </div>
 
     </div>
